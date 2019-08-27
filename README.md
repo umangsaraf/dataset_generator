@@ -17,7 +17,7 @@ Returns a json file containing HTML of all companies
 `eg. path = r'/Users/umangsaraf/Downloads/chromedriver'`
 
 ### Usage
-python3 python3 dump_html.py --inputFile <input_file> --outputFile <output_file>
+`python3 python3 dump_html.py --inputFile <input_file> --outputFile <output_file>`
 
 Inputs
 ``` --inputFile -- Name of the file that conatins all the links ```
@@ -31,7 +31,7 @@ Outputs
 Returns a csv file with scraped data of all companies 
 
 ### Usage 
-python3 python3 parseSI.py.py --inputFile <input_file> --outputFile <output_file>
+`python3 python3 parseSI.py.py --inputFile <input_file> --outputFile <output_file>`
 
 Inputs
 ``` --inputFile -- Name of the file that conatins the HTML dump ```
