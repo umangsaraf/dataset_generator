@@ -7,7 +7,7 @@ Prerequisites - install the following:
 
 
 
-- Python modules: pip3 install -r requirements.txt
+- Python modules: `pip3 install -r requirements.txt`
 
 - This requires java 8 or above to run. Java 8 can be downloaded from: https://www.oracle.com/technetwork/java/javase/downloads/jdk8-downloads-2133151.html
 
