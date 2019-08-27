@@ -8,7 +8,7 @@ from selenium import webdriver
 import argparse
 import scrapy
 import pandas as pd
-from tqdm import tqdm
+from progressbar import ProgressBar
 
 
 class parseHTML():
@@ -54,7 +54,8 @@ class parseHTML():
 
     def get_dataframe(self, dump_list):
         lst = []
-        for i in tqdm(dump_list):
+        pbar = ProgressBar()
+        for i in pbar(dump_list):
             lst.append(self.get_dic(i))
         df= pd.DataFrame(lst)
         df = df.set_index('Company name')
