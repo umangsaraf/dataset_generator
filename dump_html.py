@@ -7,7 +7,7 @@ import time
 from selenium import webdriver
 import argparse
 import scrapy
-from tqdm import tqdm
+from progressbar import ProgressBar
 
 
 class dumpHTML():
@@ -66,7 +66,8 @@ class dumpHTML():
         all_the_links = self.read(args.inputFile)
         dumped_html = {}
         dumped_html['data'] = []
-        for link in tqdm(all_the_links):
+        pbar = ProgressBar()
+        for link in pbar(all_the_links):
             html = self.getrl(link)
             dumped_html['data'].append(html)
         self.json_dump(args.outputFile, dumped_html)
