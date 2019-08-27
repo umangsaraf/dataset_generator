@@ -27,9 +27,11 @@ Returns a json file containing HTML of all companies
 `python3 python3 dump_html.py --inputFile <input_file> --outputFile <output_file>`
 
 Inputs
+
 ``` --inputFile -- Name of the file that conatins all the links ```
 
 Outputs
+
 ``` --outputFile -- Location and name of the file. Save it with .json extension ```
 
 ``` eg. python3 dump_html.py --inputFile all_links_extra.txt --outputFile test_dump.json ```
@@ -41,9 +43,11 @@ Returns a csv file with scraped data of all companies
 `python3 python3 parseSI.py.py --inputFile <input_file> --outputFile <output_file>`
 
 Inputs
+
 ``` --inputFile -- Name of the file that conatins the HTML dump ```
 
 Outputs
+
 ``` --outputFile -- Location and name of the file. Save it with .csv extension ```
 
 ``` eg. python3 parseSI.py --inputFile test_dump.json --outputFile test.csv ```
