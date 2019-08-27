@@ -1,5 +1,11 @@
 # dataset_generator
 
+## STEP 0: Cloning
+- git clone 
+- cd dataset_generator
+
+
+
 ## STEP 1: Prerequisites
 Prerequisites - install the following:
 
