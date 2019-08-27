@@ -7,6 +7,8 @@ import time
 from selenium import webdriver
 import argparse
 import scrapy
+from tqdm import tqdm
+
 
 class dumpHTML():
     
@@ -64,7 +66,7 @@ class dumpHTML():
         all_the_links = self.read(args.inputFile)
         dumped_html = {}
         dumped_html['data'] = []
-        for link in all_the_links:
+        for link in tqdm(all_the_links):
             html = self.getrl(link)
             dumped_html['data'].append(html)
         self.json_dump(args.outputFile, dumped_html)
