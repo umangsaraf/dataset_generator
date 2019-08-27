@@ -7,7 +7,7 @@ import time
 from selenium import webdriver
 import argparse
 import scrapy
-from progressbar import ProgressBar
+from progressbar import *
 
 
 class dumpHTML():
@@ -66,10 +66,18 @@ class dumpHTML():
         all_the_links = self.read(args.inputFile)
         dumped_html = {}
         dumped_html['data'] = []
-        pbar = ProgressBar()
-        for link in pbar(all_the_links):
-            html = self.getrl(link)
+        widgets = ['Test: ', Percentage(), ' ', Bar(marker='0',left='[',right=']'),
+           ' ', ETA(), ' ', Timer()] #see docs for other options
+
+        pbar = ProgressBar(widgets=widgets, maxval=500)
+        pbar.start()
+
+
+        for link in pbar(range(len(all_the_links))):
+            html = self.getrl(all_the_links[link])
             dumped_html['data'].append(html)
+            pbar.update(link)
+        pbar.finish()
         self.json_dump(args.outputFile, dumped_html)
         
 if __name__ == "__main__":
