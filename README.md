@@ -25,7 +25,7 @@ Inputs
 Outputs
 ``` --outputFile -- Location and name of the file. Save it with .json extension ```
 
-``` eg. python3 dump_html.py --inputFile testfile.txt --outputFile htmldump.json ```
+``` eg. python3 dump_html.py --inputFile testfile.txt --outputFile test_dump.json ```
 
 ## Step 3: HTML to CSV
 Returns a csv file with scraped data of all companies 
