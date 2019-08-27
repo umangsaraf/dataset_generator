@@ -3,3 +3,4 @@ Scrapy==1.6.0
 selenium==3.141.0
 requests==2.22.0
 pandas==0.22.0
+tqdm==4.26.0
