@@ -1,8 +1,8 @@
 # dataset_generator
 
 ## STEP 0: Cloning
-- git clone 
-- cd dataset_generator
+git clone https://github.com/umangsaraf/dataset_generator.git
+cd dataset_generator
 
 
 
