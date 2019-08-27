@@ -1,3 +1,4 @@
+tqdm==4.32.2
 boto3==1.9.106
 botocore==1.12.106
 certifi==2018.11.29
@@ -8,7 +9,7 @@ decorator==4.4.0
 dill==0.2.9
 docutils==0.14
 elasticsearch==6.3.1
-en-core-web-sm==2.0.0
+#en-core-web-sm==2.0.0
 idna==2.8
 jmespath==0.9.4
 msgpack==0.5.6
@@ -44,3 +45,6 @@ ujson==1.35
 urllib3==1.24.1
 validators==0.12.4
 wrapt==1.10.11
+scrapy==1.6.0 
+selenium
+re
